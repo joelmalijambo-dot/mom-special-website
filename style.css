@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    color: #ffe0e6;
+}
+
+/* Sections */
+.section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in;
+}
+
+.section h2 {
+    color: #764ba2;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* Love Messages */
+.message-box {
+    background: #fff5f8;
+    border-left: 5px solid #ff6b9d;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.message {
+    font-style: italic;
+    color: #764ba2;
+}
+
+/* Quotes */
+.quote-box {
+    background: #f0f4ff;
+    border-left: 5px solid #667eea;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.quote {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.author {
+    color: #764ba2;
+    font-weight: bold;
+}
+
+/* Dear Mom Letter */
+.letter {
+    background: #fff9e6;
+    padding: 25px;
+    border-radius: 8px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.letter p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+/* Reasons List */
+.reasons-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.reasons-list li {
+    background: #fff5f8;
+    padding: 15px;
+    border-radius: 8px;
+    color: #764ba2;
+    font-size: 1.05em;
+    font-weight: 500;
+}
+
+/* Affirmation */
+.affirmation-box {
+    text-align: center;
+    background: #fff5f8;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#affirmation-text {
+    font-size: 1.2em;
+    color: #764ba2;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+/* Counter */
+.counter-box {
+    text-align: center;
+    background: #fff5f8;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#counter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff6b9d;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .reasons-list {
+        grid-template-columns: 1fr;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+}
